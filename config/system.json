@@ -1,0 +1,27 @@
+{
+  "schema": "awesome-os.system-definition.v1",
+  "abiMagic": "0x33564742",
+  "systemUri": "system://local/terminal/awesome-os-posix",
+  "profile": "headless-terminal",
+  "gui": false,
+  "casRoot": "/var/lib/b8g/cas",
+  "casMode": "stateless-ram-netboot",
+  "v11Registry": "repository://github.com/awesome-os/holo-v11@main",
+  "devices": {
+    "local": ["terminal"],
+    "remote": ["terminal"]
+  },
+  "consoles": ["tty0", "ttyS0"],
+  "resources": [
+    {
+      "uri": "system://local/terminal/awesome-os-posix",
+      "from": "repository://github.com/awesome-os/posix@main",
+      "tags": ["pid1", "terminal", "headless", "local"]
+    },
+    {
+      "uri": "system://local/terminal/coreutils",
+      "from": "repository://github.com/awesome-os/coreutils@main",
+      "tags": ["terminal-app", "local"]
+    }
+  ]
+}
