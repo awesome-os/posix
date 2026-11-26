@@ -1,3 +1,5 @@
+> [!NOTE] Consolidated into the unified Holo v11 OS monorepo at https://github.com/awesome-os/awesome-os
+
 # Awesome-OS POSIX (`awesome-os/posix`)
 
 Ultra-minimal headless terminal & container OS substrate powered by static musl C11 PID 1 (`B8G_ABI_MAGIC_V3 = 0x33564742`), stateless RAM `v11` CAS netboot-first storage, dynamic NIC discovery, and dual `tty0` + `ttyS0` interactive shells — with **zero GUI**.
